@@ -316,6 +316,9 @@ For the Python side, the equivalent "build" is the artifact step in §8; a succe
 | Running the server and all five routes | **Verified locally** |
 | Test suite, smoke scripts | **Verified locally** |
 | Front end, assets, motion behaviour | **Verified locally** in a browser |
-| Cloning this GitHub repository on a clean machine | **Not re-tested end-to-end after push** — commands were checked against the local tree |
+| Cloning this public repository | **Verified**: anonymous `git clone --depth 1` into an empty directory gave 42 files |
+| Cold start from the clone | **Verified**: `model.ensure_artifacts()` reproduced `rows=720`, R² ≈ 0.708, MAE ≈ 0.122 kWh |
+| Running the cloned tree | **Verified**: `/`, `/app`, `/api/health`, `/api/dashboard?city=Mumbai&spike=true` all returned `200` on a spare port |
+| Brand-new OS install | **Not verified** — the clone test reused this machine's Python and installed packages |
 | Pushing to GitHub | Requires GitHub authentication (`gh auth login` or a personal access token with `repo` scope); not needed to run the app |
 | Production/public deployment | **Not supported in this repository** (no WSGI server, Dockerfile or proxy config) |
