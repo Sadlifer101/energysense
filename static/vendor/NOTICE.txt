@@ -1,0 +1,26 @@
+EnergySense — vendored front-end assets
+=======================================
+
+All third-party files in this directory are redistributed unmodified and are
+loaded locally at runtime. Nothing here is fetched from a CDN.
+
+Chart.js 4.6.1 — chart.umd.js
+  Copyright (c) 2026 Chart.js Contributors
+  MIT License — full text in ./chartjs/LICENSE.md
+  https://www.chartjs.org
+
+Fraunces (variable, roman + italic) and DM Sans — ./fonts/*.woff2
+  Both typefaces are licensed under the SIL Open Font License, Version 1.1.
+  Fraunces — Copyright (c) 2018 The Fraunces Project Authors
+             https://github.com/undercasetype/Fraunces
+  DM Sans  — Copyright (c) 2014 The DM Sans Project Authors
+             https://github.com/googlefonts/dm-fonts
+
+  SIL OFL 1.1 permits bundling, embedding and redistribution of the font
+  software provided the copyright notice and licence accompany it, and the
+  fonts are not sold on their own. Full licence text:
+  https://openfontlicense.org/open-font-license-official-text/
+
+These files were copied from the EnergySense landing-page bundle
+(static/landing/fonts) so that the landing page and this dashboard render in
+exactly the same typefaces without either page depending on the other.

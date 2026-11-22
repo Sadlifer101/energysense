@@ -1,0 +1,53 @@
+# --- Python bytecode / caches -------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments -----------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- Secrets and local configuration -----------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets.json
+credentials.json
+
+# --- Generated data and model artifacts (rebuilt on first run) --------------
+# data/smart_meter.csv, data/model.pkl and data/metrics.json are produced by
+# model.ensure_artifacts() / python app.py. They are deterministic build
+# outputs, so they are not versioned.
+data/*.csv
+data/*.pkl
+data/*.json
+data/**/*.csv
+data/**/*.pkl
+data/**/*.json
+
+# --- Logs and runtime output -------------------------------------------------
+*.log
+server.log
+server.err.log
+*.pid
+
+# --- Editor / OS files -------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
